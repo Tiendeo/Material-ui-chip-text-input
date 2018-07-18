@@ -18,6 +18,10 @@
     "name": "Francisco Alejandro Jurado",
     "email": "ajurado.93@gmail.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tiendeo/Material-ui-chip-text-input.git"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
