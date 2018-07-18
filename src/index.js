@@ -52,10 +52,11 @@ class TextInput extends Component {
   };
 
   _onChipDelete = index => e => {
+    const { values } = this.state;
     e.preventDefault();
-    const values = [...input.value];
-    values.splice(index, 1);
-    this._handleChange(values);
+    const _values = [...values];
+    _values.splice(index, 1);
+    this._handleChange(_values);
   };
 
   render() {
