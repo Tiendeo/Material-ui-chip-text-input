@@ -6,8 +6,12 @@ This component provides a [chip input field](https://material.io/design/componen
 [Click here to 🚀](https://codesandbox.io/s/jv2k4po5yv)
 
 ## Installation
+As a prerequisite, you must include the Material icon font in your project, for instance, via Google Web Fonts:
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+```
 ```shell
-npm i material-ui-chip-text-input --save 
+npm i material-ui-chip-text-input --save
 ```
 **Note:** If you are using Material-UI 1.0.0-beta, you should update to the latest version.
 

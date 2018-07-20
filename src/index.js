@@ -63,7 +63,7 @@ class TextInput extends Component {
     const { name, placeholder, classes } = this.props;
     const { values, value } = this.state;
 
-    const adorment = values > 0 && (
+    const adorment = values.length > 0 && (
       <InputAdornment position="end">
         <Icon onClick={this._onClearChips} className={classes.icon}>
           clear
