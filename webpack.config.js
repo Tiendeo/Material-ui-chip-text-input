@@ -30,6 +30,14 @@ module.exports = {
     rules: [jsLoader]
   },
   externals: {
-    react: 'commonjs react'
+    react: {
+      root: 'React',
+      commonjs2: 'react'
+    },
+    'react-dom': {
+      root: 'ReactDOM',
+      commonjs2: 'react-dom'
+    },
+    '@material-ui/core': '@material-ui/core'
   }
 };
