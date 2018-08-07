@@ -1,6 +1,6 @@
 {
   "name": "material-ui-chip-text-input",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A chip input field using Material-UI.",
   "main": "build/index.js",
   "peerDependencies": {

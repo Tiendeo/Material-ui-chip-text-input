@@ -24,12 +24,19 @@ import ChipTextInput from 'material-ui-chip-text-input';
   placeholde="Type here!"
   onChange={(chips) => handleChange(chips)}
 />
+
+<ChipTextInput
+  name="foo"
+  placeholde="Type here!"
+  values={['foo', 'bar']}
+  onChange={(chips) => handleChange(chips)}
+/>
 ```
 
 ## TODO
 - [x] Initial component
 - [ ] Test
-- [ ] Initial Values
+- [x] Initial Values
 
 ## License
 The files included in this repository are licensed under the MIT license.
