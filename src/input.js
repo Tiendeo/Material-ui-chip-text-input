@@ -80,12 +80,7 @@ const InputWrapper = ({
     <div className={classes.value}>
       {values &&
         values.map((chip, index) => (
-          <Chip
-            key={index}
-            label={chip}
-            onDelete={onDelete(index)}
-            className={classes.chip}
-          />
+          <Chip key={index} label={chip} onDelete={onDelete(index)} className={classes.chip} />
         ))}
       <input
         className={classes.input}

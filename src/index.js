@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import {
-  FormControl,
-  withStyles,
-  InputAdornment,
-  Icon,
-  Input
-} from '@material-ui/core';
+import { FormControl, withStyles, InputAdornment, Icon, Input } from '@material-ui/core';
 
 import InputWrapper from './input';
 
@@ -31,6 +25,18 @@ class TextInput extends Component {
     value: '',
     values: []
   };
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: '',
+      values: []
+    };
+
+    if (props.values) {
+      this.state.values = props.values;
+    }
+  }
 
   _setValue = value => {
     this.setState({ value });
@@ -72,10 +78,7 @@ class TextInput extends Component {
     );
 
     return (
-      <FormControl
-        aria-describedby={`${name}-text-input`}
-        className={classes.formControl}
-      >
+      <FormControl aria-describedby={`${name}-text-input`} className={classes.formControl}>
         <Input
           fullWidth
           endAdornment={adorment}
@@ -99,7 +102,8 @@ TextInput.propTypes = {
   classes: PropTypes.object.isRequired,
   placeholder: PropTypes.string,
   name: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired
+  onChange: PropTypes.func.isRequired,
+  values: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string, PropTypes.number]))
 };
 
 export default withStyles(styles)(TextInput);
